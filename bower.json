@@ -1,0 +1,23 @@
+{
+  "name": "capi5k-snooze",
+  "version": "0.0.0",
+  "homepage": "https://github.com/capi5k/capi5k-snooze",
+  "authors": [
+    "msimonin <matthieu.simonin@inria.fr>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": 
+  {
+    "capi5k-puppet": "https://github.com/capi5k/capi5k-puppet/tarball/1.0.0",
+    "capi5k-rabbitmq": "https://github.com/capi5k/capi5k-rabbitmq/tarball/1.0.0",
+    "capi5k-cassandra": "https://github.com/capi5k/capi5k-cassandra/tarball/1.0.0",
+    "capi5k-nfs": "https://github.com/capi5k/capi5k-nfs/tarball/1.0.0"
+  } 
+}

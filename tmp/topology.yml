@@ -1,0 +1,17 @@
+---
+econome-11.nantes.grid5000.fr:
+  :bootstraps: '0'
+  :groupmanagers: '5'
+  :localcontrollers: '0'
+econome-12.nantes.grid5000.fr:
+  :bootstraps: '0'
+  :groupmanagers: '6'
+  :localcontrollers: '0'
+econome-1.nantes.grid5000.fr:
+  :bootstraps: '0'
+  :localcontrollers: '25'
+  :groupmanagers: '0'
+econome-15.nantes.grid5000.fr:
+  :bootstraps: '0'
+  :localcontrollers: '25'
+  :groupmanagers: '0'
