@@ -4,13 +4,20 @@
 set :mkisotool, "hdiutil makehybrid -joliet -iso -ov -o "
 
 # Snooze specifics
+# snooze version to installed
+set :snooze_version, "2.1.4"
+# config file version to use
 set :version, 2
+# deprecated
 set :vlan, "-1"
-set :snoozenode_deb_url, "http://snooze.inria.fr/downloads/debian/latest/snoozenode.deb"
-set :snoozeclient_deb_url, "http://snooze.inria.fr/downloads/debian/latest/snoozeclient.deb"
-set :snoozeimages_deb_url, "http://snooze.inria.fr/downloads/debian/latest/snoozeimages.deb"
-set :snoozeec2_deb_url, "http://snooze.inria.fr/downloads/debian/latest/snoozeec2.deb"
 
+# where to find the deb packages
+set :snoozenode_deb_url, "http://snooze.inria.fr/downloads/debian/#{snooze_version}/snoozenode.deb"
+set :snoozeclient_deb_url, "http://snooze.inria.fr/downloads/debian/#{snooze_version}/snoozeclient.deb"
+set :snoozeimages_deb_url, "http://snooze.inria.fr/downloads/debian/#{snooze_version}/snoozeimages.deb"
+set :snoozeec2_deb_url, "http://snooze.inria.fr/downloads/debian/#{snooze_version}/snoozeec2.deb"
+
+# kadeploy 
 set :kadeploy3_common_deb_url, "https://gforge.inria.fr/frs/download.php/33640/kadeploy-common_3.2.0.7-1_all.deb"
 set :kadeploy3_client_deb_url, "https://gforge.inria.fr/frs/download.php/33639/kadeploy-client_3.2.0.7-1_all.deb"
 

@@ -13,10 +13,10 @@ class {
     version                              => "2",
     type                                 => "bootstrap",
     groupManagerHeartbeatPort            => $groupManagerHeartbeatPort,
-    zookeeperHosts                       => ["econome-10.nantes.grid5000.fr"],
+    zookeeperHosts                       => ["econome-1.nantes.grid5000.fr"],
     virtualMachineSubnet                 => ["10.176.0.0/22"],
-    externalNotificationHost             => "econome-10.nantes.grid5000.fr",
-    databaseCassandraHosts               => ["econome-13.nantes.grid5000.fr"],
+    externalNotificationHost             => "econome-1.nantes.grid5000.fr",
+    databaseCassandraHosts               => ["econome-18.nantes.grid5000.fr"],
     imageRepositorySource                => "/tmp/snooze/images",
     imageRepositoryDestination           => "/tmp/images",
 }
@@ -37,7 +37,7 @@ class {
 
   class { 
      'zookeeper::zookeeperd': 
-      zookeeperHosts            => ["econome-10.nantes.grid5000.fr"],
+      zookeeperHosts            => ["econome-1.nantes.grid5000.fr"],
   }
 
 
