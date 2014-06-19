@@ -5,7 +5,7 @@ set :mkisotool, "hdiutil makehybrid -joliet -iso -ov -o "
 
 # Snooze specifics
 # snooze version to installed
-set :snooze_version, "2.1.4"
+set :snooze_version, "2.1.5"
 # config file version to use
 set :version, 2
 # deprecated
