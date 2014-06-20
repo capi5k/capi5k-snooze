@@ -99,7 +99,7 @@ imageRepository.manager.destination = /tmp/images
 
 ################## Database ####################
 # Database type (only in-memory supported for now)
-database.type = memory
+database.type = cassandra
 
 database.cassandra.hosts = <% @databaseCassandraHosts.each do |server| %> <%= server %>:9160, <% end %>
 
