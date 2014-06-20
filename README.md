@@ -1,7 +1,7 @@
 capi5k-snooze 
 ==============
 
-Install snooze v2.1.4 on the nodes.
+Install snooze v2.1.5 on the nodes.
 
 ## Installation
 
