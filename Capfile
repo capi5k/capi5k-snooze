@@ -17,6 +17,8 @@ after "automatic",  "xp5k", "rabbitmq","cassandra", "snooze", "nfs", "describe",
 
 after "cassandra", "schema"
 
+after "snooze", "copy_images"
+
 namespace :schema do
   
   desc 'Install the database schema'
@@ -42,5 +44,26 @@ namespace :schema do
   end
 
 end
+
+$images = [
+  "debian-hadoop-context-big.qcow2",
+  "resilin-base.raw",
+  "snooze-ubuntu1310.qcow2"
+]
+
+desc 'Upload base images to the snooze repository'
+task :copy_images, :roles => [:first_bootstrap]  do
+  set :user, "root"
+  run "mkdir -p /tmp/snooze/images"
+  $images.each do |image|
+    ls = capture("ls #{snooze_imagesrepository_local_path}/#{image} &2>&1")
+    if ls==""
+      run "#{wget} -O \
+    #{snooze_imagesrepository_local_path}/#{image} \
+        http://public.rennes.grid5000.fr/~msimonin/#{image} 2>1"
+    end
+  end
+end
+
 
 

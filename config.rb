@@ -12,7 +12,8 @@ set :version, 2
 set :vlan, "-1"
 
 # where to find the deb packages
-set :snoozenode_deb_url, "http://snooze.inria.fr/downloads/debian/#{snooze_version}/snoozenode.deb"
+#set :snoozenode_deb_url, "http://snooze.inria.fr/downloads/debian/#{snooze_version}/snoozenode.deb"
+set :snoozenode_deb_url, "https://ci.inria.fr/snooze-software/view/maint/job/maint-2.1.0-snoozenode/ws/distributions/deb-package/snoozenode_2.1.6-0_all.deb"
 set :snoozeclient_deb_url, "http://snooze.inria.fr/downloads/debian/#{snooze_version}/snoozeclient.deb"
 set :snoozeimages_deb_url, "http://snooze.inria.fr/downloads/debian/#{snooze_version}/snoozeimages.deb"
 set :snoozeec2_deb_url, "http://snooze.inria.fr/downloads/debian/#{snooze_version}/snoozeec2.deb"
