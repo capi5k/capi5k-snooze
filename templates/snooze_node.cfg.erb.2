@@ -22,7 +22,7 @@ network.listen.controlDataPort = <%= @controlDataPort %>
 network.listen.monitoringDataPort = 6000
 
 ## Multicast
-network.multicast.address = 225.4.5.6
+network.multicast.address = 225.45.55.65
 network.multicast.groupLeaderHeartbeatPort = 9000
 network.multicast.groupManagerHeartbeatPort = <%= @groupManagerHeartbeatPort %>
 
@@ -54,7 +54,7 @@ httpd.maxIoIdleTimeMs = 30000
 
 ################### Hypervisor ####################
 # Hypervisor driver (xen, qemu, vbox, etc.)
-hypervisor.driver = qemu
+hypervisor.driver = kvm
 
 # Hypervisor transport method (tcp, tls, ssh)
 hypervisor.transport = tcp
@@ -99,7 +99,7 @@ imageRepository.manager.destination = /tmp/images
 
 ################## Database ####################
 # Database type (only in-memory supported for now)
-database.type = cassandra
+database.type = memory
 
 database.cassandra.hosts = <% @databaseCassandraHosts.each do |server| %> <%= server %>:9160, <% end %>
 
