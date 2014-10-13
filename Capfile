@@ -46,9 +46,9 @@ namespace :schema do
 end
 
 $images = [
-  "debian-hadoop-context-big.qcow2",
-  "resilin-base.raw",
-  "snooze-ubuntu1310.qcow2"
+#  "debian-hadoop-context-big.qcow2",
+#  "resilin-base.raw",
+  "snooze-ubuntu1310-mpi.qcow2"
 ]
 
 desc 'Upload base images to the snooze repository'
