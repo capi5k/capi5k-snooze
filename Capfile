@@ -48,7 +48,8 @@ end
 $images = [
 #  "debian-hadoop-context-big.qcow2",
 #  "resilin-base.raw",
-  "snooze-ubuntu1310-mpi.qcow2"
+  "snooze-ubuntu1310-mpi.qcow2",
+  "snooze-ubuntu1310-mpi-jtimings.qcow2"
 ]
 
 desc 'Upload base images to the snooze repository'
